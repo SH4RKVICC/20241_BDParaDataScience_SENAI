@@ -10,6 +10,9 @@ ALTER TABLE itemPedido
 ADD CONSTRAINT fk_itemPedido_produto FOREIGN KEY(id_produto)
 REFERENCES produto(id_produto);
 
+ALTER TABLE cliente
+ADD cnpj VARCHAR(20);
+
 -- Removendo colunas da tabela;
 ALTER TABLE cliente
 DROP COLUMN cnpj;
