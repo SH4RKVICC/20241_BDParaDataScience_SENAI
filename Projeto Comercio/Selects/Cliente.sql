@@ -12,3 +12,12 @@ SELECT COUNT(*) AS total_clientes FROM cliente;
 SELECT 8 FROM cliente ORDER BY nome ASC;
 SELECT 8 FROM cliente ORDER BY nome DESC;
 SELECT * FROM cliente WHERE nomeSocial IS NULL;
+
+SELECT cliente.id_cliente, cliente.nome, contato.telefone, contato.celular
+FROM cliente INNER JOIN contato ON cliente.id_cliente = contato.id_cliente;
+
+SELECT cliente.id_cliente, cliente.nome, contato.telefone, contato.celular,
+    endereco.logradouro, endereco.numero, endereco.bairro, endereco.cidade
+    FROM cliente
+    INNER JOIN contato ON cliente.id_cliente = contato.id_cliente
+    INNER JOIN endereco ON cliente.id_cliente = endereco.id_cliente; 
