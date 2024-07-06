@@ -52,6 +52,16 @@ INNER JOIN contato ct ON c.id_cliente = ct.id_cliente;
 -- Detalhes completos de cliente com contato e endereço;
 SELECT c.id_cliente, c.nome, ct.telefone, ct.celular,
        e.logradouro, e.numero, e.bairro, e.cidade
-    FROM cliente c
+    FROM cliente
     INNER JOIN contato ct ON c.id_cliente = ct.id_cliente
-    INNER JOIN endereco e ON c.id_cliente = e.id_cliente;
+    INNER JOIN endereco e ON c.id_cliente = e.id_cliente
+    WHERE endereco.uf = 'BA' AND c.nome LIKE 'H%'
+    OR endereco.uf = 'BA' AND c.nome LIKE 'B%';
+
+SELECT uf, COUNT(*) AS Estado FROM endereco
+    GROUP BY uf
+    ORDER BY Estado ASC;
+
+SELECT * FROM produto
+SELECT COUNT(*) AS Total_Produto FROM produto;
+
