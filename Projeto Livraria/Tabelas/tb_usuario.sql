@@ -8,4 +8,4 @@ CREATE TABLE tb_usuario(
     tipoDocumento VARCHAR(2) NOT NULL
 );
 
-SELECT * FROM tb_usuarioc;
+SELECT * FROM tb_usuario;
