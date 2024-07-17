@@ -1,0 +1,4 @@
+CREATE TABLE tb_genero (
+    id_genero SMALLINT IDENTITY PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+);
