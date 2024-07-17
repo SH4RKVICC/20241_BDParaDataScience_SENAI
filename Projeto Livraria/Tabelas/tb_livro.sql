@@ -1,15 +1,11 @@
 CREATE TABLE tb_livro(
 	id_livro SMALLINT IDENTITY PRIMARY KEY,
-	id_editora SMALLINT,
-	id_fornecedor SMALLINT,
 	nomeLivro VARCHAR(100),
-	marca VARCHAR(100),
-	valor FLOAT(5),
-	descricao VARCHAR(250),
-	CONSTRAINT fk_produto_categoria FOREIGN KEY (id_categoria)
-	REFERENCES categoria(id_categoria),
-	CONSTRAINT fk_produto_fornecedor FOREIGN KEY (id_fornecedor)
-	REFERENCES fornecedor(id_fornecedor),
+	sinopse VARCHAR(800),
+	CONSTRAINT fk_livro_editora FOREIGN KEY (id_editora)
+	REFERENCES tb_editora(id_editora),
+	CONSTRAINT fk_livro_genero FOREIGN KEY (id_genero)
+	REFERENCES tb_genero(id_genero),
 );
 
 SELECT * FROM tb_livro;
