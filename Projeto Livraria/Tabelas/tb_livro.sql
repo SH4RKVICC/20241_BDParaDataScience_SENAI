@@ -2,7 +2,7 @@ CREATE TABLE tb_livro(
 	id_livro SMALLINT IDENTITY PRIMARY KEY,
 	id_editora SMALLINT,
 	id_fornecedor SMALLINT,
-	nomeProduto VARCHAR(100),
+	nomeLivro VARCHAR(100),
 	marca VARCHAR(100),
 	valor FLOAT(5),
 	descricao VARCHAR(250),

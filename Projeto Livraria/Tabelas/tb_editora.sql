@@ -1,5 +1,5 @@
 CREATE TABLE tb_editora (
     id_editora SMALLINT IDENTITY PRIMARY KEY,
-    nome VARCHAR(150) NOT NULL,
+    nomeEditora VARCHAR(150) NOT NULL,
     cnpj VARCHAR(14) NOT NULL,
 );
