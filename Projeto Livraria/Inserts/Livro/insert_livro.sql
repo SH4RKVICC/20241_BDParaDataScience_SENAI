@@ -56,6 +56,9 @@ INSERT INTO tb_livro (nomeLivro, sinopse, id_editora, id_genero, id_autor) VALUE
 ('O Jogo do Anjo', 'Um jovem escritor recebe uma oferta misteriosa que mudará sua vida para sempre.', 35, 11, 7),
 ('O Menino do Pijama Listrado', 'A inocente amizade entre dois garotos durante o Holocausto.', 36, 11, 6),
 ('A Cabana', 'Um homem encontra respostas para suas questões mais profundas em uma cabana misteriosa.', 37, 11, 6),
-('A Menina que Brincava com Fogo', 'A contin
+('A Menina que Brincava com Fogo', 'A continuação da série Millennium, com mais mistérios e suspense.', 8, 6, 21),
+('A Rainha Vermelha', 'Uma jovem descobre poderes especiais e se vê no meio de uma guerra de classes.', 9, 4, 22),
+('A Dança dos Dragões', 'O quinto livro da série "As Crônicas de Gelo e Fogo", cheio de intrigas e batalhas.', 10, 4, 23);
+
 
 
