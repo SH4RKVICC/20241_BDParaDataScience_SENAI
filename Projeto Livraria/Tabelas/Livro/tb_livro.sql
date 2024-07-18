@@ -1,5 +1,8 @@
 CREATE TABLE tb_livro(
 	id_livro SMALLINT IDENTITY PRIMARY KEY,
+	id_editora SMALLINT,
+	id_autor SMALLINT,
+	id_genero SMALLINT,
 	nomeLivro VARCHAR(100),
 	sinopse VARCHAR(800),
 	CONSTRAINT fk_livro_editora FOREIGN KEY (id_editora)
